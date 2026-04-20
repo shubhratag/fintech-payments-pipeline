@@ -127,7 +127,7 @@ fintech-payments-pipeline/
 - Databricks Community Edition account (free)
 
 ### Step 1 — Clone the repository
-git clone https://github.com/shubhratag/fintech-payments-pipeline.git 
+git clone https://github.com/shubhratag/fintech-payments-pipeline.git
 cd fintech-payments-pipeline
 
 ### Step 2 — Install Python dependencies
