@@ -73,6 +73,14 @@ Payment Sources (Mobile, Web, POS, Stripe)
 ![Gold Layer](GoldAggregation1.png)
 ![Gold Layer](GoldAggregation2.png)
 
+### Airflow DAG — Pipeline Orchestration
+- Orchestrates Bronze → Silver → Data Quality → Gold in sequence
+- Each task only runs after the previous one succeeds
+- Hourly schedule with 3 retries and 10 minute SLA
+- Protects downstream layers from incomplete or bad data
+
+![Airflow DAG](airflow-dag.png)
+
 ---
 
 ## Key Design Decisions
